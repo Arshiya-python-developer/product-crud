@@ -7,14 +7,14 @@ class PRODUCT:
         self.description = description
         self.slug = slug
         self.permalink = permalink
-        self.IsAvailable = is_available
+        self.is_available = is_available
         self.sku = sku
         self.price = price
         self.regular_price = regular_price
         self.sale_price = sale_price
         self.manage_stock = manage_stock
         self.stock_quantity = stock_quantity
-        self.IsVisible = is_visible
+        self.is_visible = is_visible
         self.date_created_gmt = date_created_gmt
         self.date_modified_gmt =  date_modified_gmt
 
