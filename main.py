@@ -23,7 +23,7 @@ class PRODUCT:
         self.tittle = input('please enter tittle of product: ')
         self.short_description = input('please write short description:')
         self.description = input('please write more description: ')
-        self.slug = int
+        self.slug = int('please enter how many slug:')
 
 
 
