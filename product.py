@@ -26,40 +26,41 @@ class PRODUCT:
         self.date_created_gmt = date_created_gmt
         self.date_modified_gmt =  date_modified_gmt
 
-          
+
 
 
     def __repr__(self):
         return f'Product({self.id},{self.tittle},{self.short_description},{self.description},{self.slug}' \
-               f'{self.sku},{self.permalink},{self.is_visible},{self.price},{self.regular_price},{self.sale_price}' \
-               f'{self.manage_stock},{self.stock_quantity},{self.is_visible},{self.date_created_gmt},{self.date_modified_gmt}'
+               f'{self.sku},{self.permalink},{self.is_available},{self.price},{self.regular_price},{self.sale_price}' \
+               f'{self.manage_stock},{self.stock_quantity},{self.is_visible},{self.date_created_gmt},{self.date_modified_gmt}) '
 
 
 
-    def add_product(self):
+    def add_product(self,product):
+        return self._product.append(product)
 
-        return self._product.append([self.id,self.tittle,self.short_description,self.description,self.slug,
-                                     self.permalink,self.is_available,self.sku,self.price,self.regular_price,
-                                     self.sale_price,self.manage_stock,self.stock_quantity])
+        #return self._product.append([self.id,self.tittle,self.short_description,self.description,self.slug,
+         #                            self.permalink,self.is_available,self.sku,self.price,self.regular_price,
+          #                           self.sale_price,self.manage_stock,self.stock_quantity])
 
 
 
     def read_product(self):
-        pass
+        for item in self._product:
+            print(item)
 
     def update_product(self):
-        pass
+        new = [self.id,self.tittle,self.short_description,self.description,self.slug,self.permalink,self.is_available,
+               self.sku,self.price,self.regular_price,self.sale_price,self.manage_stock,self.is_visible,self.date_created_gmt,
+               self.date_modified_gmt]
+
+        self._product[:16] = new.__repr__()
+
+
 
 
     def delete_product(self):
-        pass
-
-
-
-
-
-
-
-
-
-
+        if self._product ==[]:
+            print('nothing')
+        else:
+            print(self._product.clear())
