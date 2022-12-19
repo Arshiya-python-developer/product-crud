@@ -2,7 +2,7 @@ class PRODUCT:
 
     _product = []
     # Initialized
-    def __init__(self,id:int,tittle:str,short_description:str,description:str,slug:int,permalink:str,is_available:bool,sku,price:float,regular_price:float,sale_price:float,manage_stock:int,stock_quantity:int,is_visible:bool,date_created_gmt,date_modified_gmt):
+    def __init__(self,id:int,tittle:str,short_description:str,description:str,slug:int,permalink:str,is_available:bool,sku:str,price:float,regular_price:float,sale_price:float,manage_stock:int,stock_quantity:int,is_visible:bool,date_created_gmt,date_modified_gmt):
 
         assert price >= 0
         assert regular_price >= 0
