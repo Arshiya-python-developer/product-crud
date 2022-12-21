@@ -36,8 +36,9 @@ class PRODUCT:
 
 
 
-    def add_product(self,product):
-        return self._product.append(product)
+     def add_product(self):
+       self._product.append(self)
+       return self.__repr__()
 
         #return self._product.append([self.id,self.tittle,self.short_description,self.description,self.slug,
          #                            self.permalink,self.is_available,self.sku,self.price,self.regular_price,
